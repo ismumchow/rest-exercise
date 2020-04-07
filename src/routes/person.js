@@ -12,6 +12,8 @@ router.get('/person', (req,res) => {
     }
 });
 //params property on the requst object
+//localhost:3000/person/thomas 
+
 router.get("/person/:name", (req, res) => {
         res.send(`you have requested a person ${req.params.name}` );
 });
